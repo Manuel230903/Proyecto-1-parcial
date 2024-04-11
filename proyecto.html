@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./proyecto.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+        <button onclick="addTask()" style="background-color:gold;">Agregar</button>
+        <ul id="taskList">
+            <!-- Aquí se añadirán las tareas dinámicamente con JavaScript -->
+        </ul>
+        <div class="filter">
+            <button onclick="filterTasks('all')" style="background-color:aqua;">Todas</button>
+            <button onclick="filterTasks('active')" style="background-color:aqua;" >Activas</button>
+            <button onclick="filterTasks('completed')" style="background-color:aqua;">Completadas</button>
+        </div>
+    </div>
+
+    <script src="./proyecto.js"></script>
+</body>
+</html>
